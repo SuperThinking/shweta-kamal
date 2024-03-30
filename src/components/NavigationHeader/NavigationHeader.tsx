@@ -28,6 +28,7 @@ export default function NavigationHeader({
   return (
     <div
       style={{
+        zIndex: 10,
         position: "absolute",
         marginLeft: "auto",
         marginRight: "auto",
