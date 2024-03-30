@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #F2EFE6;
+}
+
+div#root {
+  height: 100%;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +52,127 @@
 
 .read-the-docs {
   color: #888;
+}
+
+#semicircle {
+  z-index: 3;
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-color: #739072;
+  border-top-left-radius: 800px;
+  border-top-right-radius: 800px;
+  
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#semicircle::before {
+  content: '';
+  background-color: #739072;
+  border-top-left-radius: 800px;
+  border-top-right-radius: 800px;
+  transform-origin: bottom center;
+  transform: scaleY(2);
+}
+
+#homeImg {
+  z-index: 5;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  display: 'none';
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+#decorationImg {
+  z-index: 4;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#homeTitle {
+  z-index: 4;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 58%;
+
+  width: 32em;
+}
+
+#homeRedirectLinkContainer {
+  z-index: 6;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3%;
+}
+
+#homeLeftText {
+  z-index: 5;
+  position: absolute;
+
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+#homeRightText {
+  z-index: 5;
+  position: absolute;
+
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.m-moveUp {
+  bottom: 60%;
+  animation: bounce-up 0.5s forwards;
+}
+
+.m-moveDown {
+  bottom: 35%;
+  animation: bounce-down 0.5s forwards;
+}
+
+@keyframes bounce-up {
+  0% {
+      bottom: 35%;
+  }
+  50% {
+      bottom: 65%; /* Adjust the peak height of bounce */
+  }
+  100% {
+      bottom: 60%;
+  }
+}
+
+@keyframes bounce-down {
+  0% {
+      bottom: 60%;
+  }
+  50% {
+      bottom: 30%; /* Adjust the peak height of bounce */
+  }
+  100% {
+      bottom: 35%;
+  }
 }
