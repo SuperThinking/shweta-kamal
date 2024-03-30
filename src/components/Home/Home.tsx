@@ -52,11 +52,13 @@ export default function Home() {
         src={ShwetaSVG}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
+        width={330}
       />
       <img
         id="decorationImg"
         src={DecorationSVG}
         className={hovering ? "m-fadeIn" : "m-fadeOut"}
+        width={900}
       />
       <div
         id="homeRedirectLinkContainer"

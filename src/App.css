@@ -57,11 +57,11 @@ div#root {
 #semicircle {
   z-index: 3;
   position: absolute;
-  width: 800px;
-  height: 400px;
+  width: 700px;
+  height: 350px;
   background-color: #739072;
-  border-top-left-radius: 800px;
-  border-top-right-radius: 800px;
+  border-top-left-radius: 700px;
+  border-top-right-radius: 700px;
   
   left: 50%;
   transform: translateX(-50%);
@@ -71,8 +71,8 @@ div#root {
 #semicircle::before {
   content: '';
   background-color: #739072;
-  border-top-left-radius: 800px;
-  border-top-right-radius: 800px;
+  border-top-left-radius: 700px;
+  border-top-right-radius: 700px;
   transform-origin: bottom center;
   transform: scaleY(2);
 }
@@ -113,9 +113,9 @@ div#root {
 
   left: 50%;
   transform: translateX(-50%);
-  bottom: 58%;
+  bottom: 51%;
 
-  width: 32em;
+  width: 31em;
 }
 
 #homeRedirectLinkContainer {
