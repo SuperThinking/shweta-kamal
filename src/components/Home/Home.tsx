@@ -31,7 +31,7 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ minHeight: "100%", flex: 1 }}>
+    <div className="section">
       <img
         id="homeLeftText"
         src={QuoteSVG}

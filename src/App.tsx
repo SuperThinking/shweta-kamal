@@ -8,12 +8,7 @@ function App() {
   const [tab, setTab] = useState<TABS>(TABS.HOME);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
+    <div className="rootContainer">
       <NavigationHeader tab={tab} setTab={setTab} />
       <Home />
     </div>
