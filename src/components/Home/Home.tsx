@@ -52,7 +52,7 @@ export default function Home() {
         src={ShwetaSVG}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
-        width={330}
+        width={332}
       />
       <img
         id="decorationImg"
@@ -69,7 +69,7 @@ export default function Home() {
           borderStyle: "solid",
           borderRadius: 50,
           fontSize: 25.69,
-          backdropFilter: "blur(2px)",
+          backdropFilter: "blur(10px)",
           width: 367,
           textAlign: "center",
           justifyContent: "center",
